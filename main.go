@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(5 % 10)
+	fmt.Println(6 % 10)
 }
