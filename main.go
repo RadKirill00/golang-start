@@ -17,7 +17,7 @@ func main() {
 	str := Point{
 		X: 2,
 		Y: 3,
-		T: "Hello",
+		T: "Hello, GO",
 	}
 	str.method()
 	fmt.Println(str)
