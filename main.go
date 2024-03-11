@@ -2,15 +2,23 @@ package main
 
 import "fmt"
 
-func main() {
-	pointer(4)
+type Point struct {
+	X int
+	Y int
+	T string
 }
 
-func pointer(a int) {
+func (p Point) method() {
+	fmt.Println(p.X)
+	fmt.Println(p.Y)
+}
 
-	b := &a
-	fmt.Println(a)
-	fmt.Println(b)
-	*b /= 2
-	fmt.Println(a)
+func main() {
+	str := Point{
+		X: 2,
+		Y: 3,
+		T: "Hello",
+	}
+	str.method()
+	fmt.Println(str)
 }
