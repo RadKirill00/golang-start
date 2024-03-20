@@ -2,16 +2,20 @@ package main
 
 import "fmt"
 
-func something(callback func(int, int) int, s string) int {
-	res := callback(5, 5)
-	fmt.Println(s)
-	return res
+func totalprice(initPrce int) func(int) int {
+	res := initPrce
+	return func(i int) int {
+		res += i
+		return res
+	}
 }
 
 func main() {
-	callbackFunc := func(n int, q int) int { return n + q }
 
-	res := something(callbackFunc, "Hello, Kirill Radchenko")
+	result := totalprice(1)
+	fmt.Println(result(1))
+	fmt.Println(result(1))
+	fmt.Println(result(1))
+	fmt.Println(result(1))
 
-	fmt.Println(res)
 }
