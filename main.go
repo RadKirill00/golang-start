@@ -12,7 +12,7 @@ func totalprice(initPrce int) func(int) int {
 
 func main() {
 
-	result := totalprice(1)
+	result := totalprice(0)
 	fmt.Println(result(1))
 	fmt.Println(result(1))
 	fmt.Println(result(1))
