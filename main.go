@@ -2,20 +2,19 @@ package main
 
 import "fmt"
 
-func totalprice(initPrce int) func(int) int {
-	res := initPrce
-	return func(i int) int {
-		res += i
-		return res
-	}
-}
-
 func main() {
+	var res int
+	a := []int{
+		1,
+		2,
+		3,
+		4,
+		5,
+	}
 
-	result := totalprice(0)
-	fmt.Println(result(1))
-	fmt.Println(result(1))
-	fmt.Println(result(1))
-	fmt.Println(result(1))
+	for _, j := range a {
+		res += j
 
+	}
+	fmt.Println(res)
 }
