@@ -2,19 +2,15 @@ package main
 
 import "fmt"
 
+type Point struct {
+	Y int
+	X int
+}
+
 func main() {
-	var res int
-	a := []int{
-		1,
-		2,
-		3,
-		4,
-		5,
+	oneMao := map[string]Point{
+		"a": {1, 2},
 	}
+	fmt.Println(oneMao)
 
-	for _, j := range a {
-		res += j
-
-	}
-	fmt.Println(res)
 }
