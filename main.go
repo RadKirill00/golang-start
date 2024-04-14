@@ -2,15 +2,10 @@ package main
 
 import "fmt"
 
-type Point struct {
-	Y int
-	X int
-}
-
 func main() {
-	oneMao := map[string]Point{
-		"a": {1, 2},
-	}
-	fmt.Println(oneMao)
+	var a, b int
+	fmt.Scan(&a, &b)
 
+	sum := a + b
+	fmt.Println(sum)
 }
